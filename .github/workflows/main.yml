@@ -1,32 +1,29 @@
-name: Asli Connect CI/CD
+name: CI/CD Pipeline
 
 on:
   push:
+    branches:
+      - main
 
 jobs:
-
-  build-and-deploy:
-
+  build:
     runs-on: ubuntu-latest
 
     steps:
-
-      # Checkout Source Code
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # Setup Java
-      - name: Setup Java
-        uses: actions/setup-java@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          distribution: 'temurin'
-          java-version: '21'
+          node-version: 18
 
-      # Build Maven Project
-      - name: Build Project
-        run: mvn clean install
+      - name: Install Dependencies
+        run: npm install
 
-      # Build Docker Image
+      - name: Build Application
+        run: npm run build
+
       - name: Build Docker Image
         run: docker build -t asli_connect-app .
 
