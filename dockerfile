@@ -1,9 +1,13 @@
-FROM openjdk:21
+FROM node:18
 
 WORKDIR /app
 
-COPY target/*.jar app.jar
+COPY backend/package*.json ./
 
-EXPOSE 8080
+RUN npm install
 
-ENTRYPOINT ["java","-jar","app.jar"]
+COPY backend .
+
+EXPOSE 5000
+
+CMD ["node", "server.js"]
