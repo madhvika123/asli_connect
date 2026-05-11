@@ -1,0 +1,28 @@
+/* src/NetworkStatusMessage.css */
+.no-internet-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.no-internet-content .no-internet-icon {
+  font-size: 64px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+.no-internet-content .no-internet-message {
+  color: var(--primary-color);
+  font-size: 16px;
+  padding-block: 4px;
+}
+
+.retry-button {
+  background-color: #03045E;
+  color: white;
+  border: none;
+  padding: 6px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}

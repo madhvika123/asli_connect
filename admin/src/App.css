@@ -1,0 +1,50 @@
+.ant-menu-item-selected {
+  color: white !important;
+}
+
+.ant-menu-title-content {
+  color: white;
+}
+
+.ant-menu-item-icon {
+  color: white !important;
+}
+
+.ant-layout {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  min-height: 0;
+  background: white !important;
+}
+
+.ant-form-item {
+  margin-bottom: 12px !important;
+  margin-top: 0px !important;
+}
+
+.ant-drawer-body {
+  padding: 20px !important;
+  padding-top: 4px !important;
+}
+
+.ant-menu-light .ant-menu-item-selected {
+  background-color: #fff !important;
+  /* example: Tailwind blue-800 */
+  color: #12161B !important;
+}
+
+
+.ant-menu-light .ant-menu-item-selected a,
+.ant-menu-light .ant-menu-item-selected .ant-menu-item-icon {
+  color: #12161B !important;
+}
+
+.ant-form-item-explain-error {
+  margin-bottom: 12px;
+}
+
+.ant-table-thead > tr > th {
+  white-space: nowrap;
+  text-align: center;
+}

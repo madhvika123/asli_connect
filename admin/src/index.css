@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ✅ Apply a default font and background */
+/* body {
+  @apply font-sans bg-gray-100 text-gray-900;
+} */
+
+/* ✅ Smooth scrolling for better UX */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ✅ Custom scrollbar styles (Optional) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.client-details-form .css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-color: lightgray !important;
+}
+
+.client-details-form .css-md26zr-MuiInputBase-root-MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #132845 !important;
+}
+
+.client-details-form .css-w1u3ce {
+  font-size: 16px;
+  display: block;
+  width: auto !important;
+  margin-bottom: 24px;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 12px;
+  line-height: inherit;
+  border: 0;
+  border-bottom: 1px solid #132845;
+  border-color: #132845 !important;
+  color: #132845 !important;
+}
+
+.client-details-form .css-1bp1a06.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #132845 !important;
+}
+
+.client-details-form .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: #132845 !important;
+}
+
+.client-details-form .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root {
+  color: gray !important;
+}
+
+/* .client-details-form .Mui-focused {
+  color: #132845 !important;
+} */
+
+.client-details-form .Mui-focused {
+  color: black !important;
+}
+
+.client-details-form .Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #132845 !important;
+}
+
+/* .client-details-form .css-1n4twyu-MuiInputBase-input-MuiOutlinedInput-input {
+  color: gray !important;
+} */
+
+.client-details-form .css-1ald77x.Mui-focus {
+  color: #132845 !important;
+}
+
+.no-arrows::-webkit-inner-spin-button,
+.no-arrows::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-arrows {
+  -moz-appearance: textfield;
+}
+
+/* Custom Drawer Close Icon */
+.custom-drawer .ant-drawer-close {
+  display: none !important;
+}
+
+.preview-drawer .ant-drawer-body {
+  padding: 10px !important;
+}
+
+.custom-drawer .ant-drawer-close {
+  display: none !important;
+}
