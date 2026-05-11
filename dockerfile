@@ -1,26 +1,9 @@
-# Use official Node.js image
-FROM node:18
+FROM openjdk:21
 
-# Create app directory
 WORKDIR /app
 
-# Copy package files
-COPY package*.json ./
+COPY target/*.jar app.jar
 
-# Install dependencies
-RUN npm install
+EXPOSE 8080
 
-# Copy project files
-COPY . .
-
-# Build application
-RUN npm run build
-
-# Install serve package
-RUN npm install -g serve
-
-# Expose application port
-EXPOSE 3000
-
-# Start application
-CMD ["serve", "-s", "build", "-l", "3000"]
+ENTRYPOINT ["java","-jar","app.jar"]
